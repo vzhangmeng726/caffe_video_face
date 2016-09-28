@@ -1,0 +1,64 @@
+src/caffe/layers/diagonalgaterecurrent_layer.cu(245): warning: variable "H_t" was declared but never referenced
+          detected during instantiation of "void caffe::DiagonalGateRecurrentLayer<Dtype>::Backward_gpu(const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &, const std::vector<__nv_bool, std::allocator<__nv_bool>> &, const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &) [with Dtype=float]" 
+(343): here
+
+src/caffe/layers/diagonalgaterecurrent_layer.cu(245): warning: variable "H_t" was declared but never referenced
+          detected during instantiation of "void caffe::DiagonalGateRecurrentLayer<Dtype>::Backward_gpu(const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &, const std::vector<__nv_bool, std::allocator<__nv_bool>> &, const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &) [with Dtype=double]" 
+(343): here
+
+src/caffe/layers/diagonalgaterecurrent_layer.cu(245): warning: variable "H_t" was declared but never referenced
+          detected during instantiation of "void caffe::DiagonalGateRecurrentLayer<Dtype>::Backward_gpu(const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &, const std::vector<__nv_bool, std::allocator<__nv_bool>> &, const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &) [with Dtype=float]" 
+(343): here
+
+src/caffe/layers/diagonalgaterecurrent_layer.cu(245): warning: variable "H_t" was declared but never referenced
+          detected during instantiation of "void caffe::DiagonalGateRecurrentLayer<Dtype>::Backward_gpu(const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &, const std::vector<__nv_bool, std::allocator<__nv_bool>> &, const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &) [with Dtype=double]" 
+(343): here
+
+src/caffe/layers/diagonalgaterecurrent_layer.cu(245): warning: variable "H_t" was declared but never referenced
+          detected during instantiation of "void caffe::DiagonalGateRecurrentLayer<Dtype>::Backward_gpu(const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &, const std::vector<__nv_bool, std::allocator<__nv_bool>> &, const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &) [with Dtype=float]" 
+(343): here
+
+src/caffe/layers/diagonalgaterecurrent_layer.cu(245): warning: variable "H_t" was declared but never referenced
+          detected during instantiation of "void caffe::DiagonalGateRecurrentLayer<Dtype>::Backward_gpu(const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &, const std::vector<__nv_bool, std::allocator<__nv_bool>> &, const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &) [with Dtype=double]" 
+(343): here
+
+src/caffe/layers/diagonalgaterecurrent_layer.cu(245): warning: variable "H_t" was declared but never referenced
+          detected during instantiation of "void caffe::DiagonalGateRecurrentLayer<Dtype>::Backward_gpu(const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &, const std::vector<__nv_bool, std::allocator<__nv_bool>> &, const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &) [with Dtype=float]" 
+(343): here
+
+src/caffe/layers/diagonalgaterecurrent_layer.cu(245): warning: variable "H_t" was declared but never referenced
+          detected during instantiation of "void caffe::DiagonalGateRecurrentLayer<Dtype>::Backward_gpu(const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &, const std::vector<__nv_bool, std::allocator<__nv_bool>> &, const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &) [with Dtype=double]" 
+(343): here
+
+src/caffe/layers/diagonalgaterecurrent_layer.cu(245): warning: variable "H_t" was declared but never referenced
+          detected during instantiation of "void caffe::DiagonalGateRecurrentLayer<Dtype>::Backward_gpu(const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &, const std::vector<bool, std::allocator<bool>> &, const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &) [with Dtype=float]" 
+(343): here
+
+src/caffe/layers/diagonalgaterecurrent_layer.cu(245): warning: variable "H_t" was declared but never referenced
+          detected during instantiation of "void caffe::DiagonalGateRecurrentLayer<Dtype>::Backward_gpu(const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &, const std::vector<bool, std::allocator<bool>> &, const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &) [with Dtype=double]" 
+(343): here
+
+src/caffe/layers/diagonalgaterecurrent_layer.cu(245): warning: variable "H_t" was declared but never referenced
+          detected during instantiation of "void caffe::DiagonalGateRecurrentLayer<Dtype>::Backward_gpu(const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &, const std::vector<bool, std::allocator<bool>> &, const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &) [with Dtype=float]" 
+(343): here
+
+src/caffe/layers/diagonalgaterecurrent_layer.cu(245): warning: variable "H_t" was declared but never referenced
+          detected during instantiation of "void caffe::DiagonalGateRecurrentLayer<Dtype>::Backward_gpu(const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &, const std::vector<bool, std::allocator<bool>> &, const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &) [with Dtype=double]" 
+(343): here
+
+src/caffe/layers/diagonalgaterecurrent_layer.cu(245): warning: variable "H_t" was declared but never referenced
+          detected during instantiation of "void caffe::DiagonalGateRecurrentLayer<Dtype>::Backward_gpu(const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &, const std::vector<bool, std::allocator<bool>> &, const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &) [with Dtype=float]" 
+(343): here
+
+src/caffe/layers/diagonalgaterecurrent_layer.cu(245): warning: variable "H_t" was declared but never referenced
+          detected during instantiation of "void caffe::DiagonalGateRecurrentLayer<Dtype>::Backward_gpu(const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &, const std::vector<bool, std::allocator<bool>> &, const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &) [with Dtype=double]" 
+(343): here
+
+src/caffe/layers/diagonalgaterecurrent_layer.cu(245): warning: variable "H_t" was declared but never referenced
+          detected during instantiation of "void caffe::DiagonalGateRecurrentLayer<Dtype>::Backward_gpu(const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &, const std::vector<bool, std::allocator<bool>> &, const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &) [with Dtype=float]" 
+(343): here
+
+src/caffe/layers/diagonalgaterecurrent_layer.cu(245): warning: variable "H_t" was declared but never referenced
+          detected during instantiation of "void caffe::DiagonalGateRecurrentLayer<Dtype>::Backward_gpu(const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &, const std::vector<bool, std::allocator<bool>> &, const std::vector<caffe::Blob<Dtype> *, std::allocator<caffe::Blob<Dtype> *>> &) [with Dtype=double]" 
+(343): here
+

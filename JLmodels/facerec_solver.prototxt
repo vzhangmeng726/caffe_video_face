@@ -1,0 +1,94 @@
+
+net: "./facerec_train_val.prototxt"
+
+#test_iter: 40
+
+test_interval:500
+base_lr:  0.001
+momentum: 0.9
+weight_decay: 0.0005
+
+solver_type: SGD
+
+lr_policy: "step"
+power: 2
+gamma: 0.1
+stepsize: 50000
+display: 1
+max_iter: 250000
+snapshot: 500
+snapshot_prefix: "models/facerec"
+solver_mode: GPU
+device_id:3
+iter_size: 1
+test_initialization:0
+save_blob:-1
+save_blob_path:"./result/"
+#print_datadiff:10
+test_protos
+{
+
+	test_proto{
+		test_type:FACERET
+		topn:2
+		topn:5
+		topn:10
+		test_file:"/home/jiliang/data/facerec/annotations/landmarks_pubfig.test"
+		key_points_count:5
+		data_folder:"/home/jiliang/data/facerec/images/"
+		deploy_net:"./facerec_deploy.prototxt" 
+		output_layername:"l2"
+		datascale:1
+		meanvalue:0
+		affine_image_param 
+		{
+			center_ind: -1
+
+			norm_mode: RECT_LE_RE_LM_RM
+			norm_ratio: 0.3
+
+			fill_type: false
+			value: 0
+
+			image_info 
+			{
+				height:128 
+				width: 128
+				is_color: true
+			}
+		}
+
+	}
+	test_proto{
+		test_type:FACEVER
+		#topn:2
+		#topn:5
+		#topn:10
+		test_file:"/home/wcd13/caffe/lfw_testpairs_5pts.txt"
+		key_points_count:5
+		data_folder:"/home/wcd13/lfw/"
+		deploy_net:"./facerec_deploy.prototxt" 
+		output_layername:"l2"
+		datascale:1
+		meanvalue:0
+		affine_image_param 
+		{
+			center_ind: -1
+
+			norm_mode: RECT_LE_RE_LM_RM
+			norm_ratio: 0.3
+
+			fill_type: false
+			value: 0
+
+			image_info 
+			{
+				height: 128
+				width: 128
+				is_color: true
+			}
+		}
+
+	}
+
+}

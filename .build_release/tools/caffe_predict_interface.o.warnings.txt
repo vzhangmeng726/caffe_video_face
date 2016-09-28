@@ -1,0 +1,16 @@
+tools/caffe_predict_interface.cpp: In function ‘cv::Mat get_outputmap(const std::vector<std::vector<caffe::Blob<float>*>, std::allocator<std::vector<caffe::Blob<float>*> > >&, int, bool)’:
+tools/caffe_predict_interface.cpp:163:8: warning: unused variable ‘count’ [-Wunused-variable]
+  int   count  = outblobs[0]->count();
+        ^
+tools/caffe_predict_interface.cpp: In function ‘cv::Mat forwardNet(caffe::Net<float>*, std::string, std::vector<cv::Mat>, int, int, std::vector<float>, float, bool, bool)’:
+tools/caffe_predict_interface.cpp:247:33: warning: unused variable ‘bottom_need_backward’ [-Wunused-variable]
+  const vector<vector<bool> > &  bottom_need_backward = caffe_net->bottom_need_backward();
+                                 ^
+tools/caffe_predict_interface.cpp: In member function ‘bool Predict_interface::init(std::string, std::string, std::string, std::string, int, int, int, float, int, bool, bool)’:
+tools/caffe_predict_interface.cpp:386:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+tools/caffe_predict_interface.cpp: At global scope:
+tools/caffe_predict_interface.cpp:78:21: warning: ‘int (* GetBrewFunction(const string&))()’ defined but not used [-Wunused-function]
+ static BrewFunction GetBrewFunction( const caffe::string & name )
+                     ^

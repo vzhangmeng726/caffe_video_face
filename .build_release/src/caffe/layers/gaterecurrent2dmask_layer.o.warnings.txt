@@ -1,0 +1,16 @@
+src/caffe/layers/gaterecurrent2dmask_layer.cpp: In instantiation of ‘void caffe::GateRecurrent2dmaskLayer<Dtype>::LayerSetUp(const std::vector<caffe::Blob<Dtype>*>&, const std::vector<caffe::Blob<Dtype>*>&) [with Dtype = float]’:
+src/caffe/layers/gaterecurrent2dmask_layer.cpp:83:2:   required from here
+src/caffe/layers/gaterecurrent2dmask_layer.cpp:21:17: error: ‘class caffe::LayerParameter’ has no member named ‘gaterecurrent2dmask_param’
+     horizontal_ = this->layer_param_.gaterecurrent2dmask_param().horizontal();
+                 ^
+src/caffe/layers/gaterecurrent2dmask_layer.cpp:22:12: error: ‘class caffe::LayerParameter’ has no member named ‘gaterecurrent2dmask_param’
+   reverse_ = this->layer_param_.gaterecurrent2dmask_param().reverse();
+            ^
+src/caffe/layers/gaterecurrent2dmask_layer.cpp: In instantiation of ‘void caffe::GateRecurrent2dmaskLayer<Dtype>::LayerSetUp(const std::vector<caffe::Blob<Dtype>*>&, const std::vector<caffe::Blob<Dtype>*>&) [with Dtype = double]’:
+src/caffe/layers/gaterecurrent2dmask_layer.cpp:83:2:   required from here
+src/caffe/layers/gaterecurrent2dmask_layer.cpp:21:17: error: ‘class caffe::LayerParameter’ has no member named ‘gaterecurrent2dmask_param’
+     horizontal_ = this->layer_param_.gaterecurrent2dmask_param().horizontal();
+                 ^
+src/caffe/layers/gaterecurrent2dmask_layer.cpp:22:12: error: ‘class caffe::LayerParameter’ has no member named ‘gaterecurrent2dmask_param’
+   reverse_ = this->layer_param_.gaterecurrent2dmask_param().reverse();
+            ^

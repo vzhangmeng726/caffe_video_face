@@ -1,0 +1,28 @@
+src/caffe/solver.cpp: In instantiation of ‘void caffe::Solver<Dtype>::Test_Segment(caffe::TestProto) [with Dtype = float]’:
+src/caffe/solver.cpp:1443:1:   required from here
+src/caffe/solver.cpp:590:8: warning: unused variable ‘maxv’ [-Wunused-variable]
+  float maxv,maxid;
+        ^
+src/caffe/solver.cpp:590:13: warning: unused variable ‘maxid’ [-Wunused-variable]
+  float maxv,maxid;
+             ^
+src/caffe/solver.cpp:591:8: warning: unused variable ‘totalcount’ [-Wunused-variable]
+  float totalcount=0;
+        ^
+src/caffe/solver.cpp:592:8: warning: unused variable ‘errorcount’ [-Wunused-variable]
+  float errorcount=0;
+        ^
+src/caffe/solver.cpp: In instantiation of ‘void caffe::Solver<Dtype>::Test_Segment(caffe::TestProto) [with Dtype = double]’:
+src/caffe/solver.cpp:1443:1:   required from here
+src/caffe/solver.cpp:590:8: warning: unused variable ‘maxv’ [-Wunused-variable]
+  float maxv,maxid;
+        ^
+src/caffe/solver.cpp:590:13: warning: unused variable ‘maxid’ [-Wunused-variable]
+  float maxv,maxid;
+             ^
+src/caffe/solver.cpp:591:8: warning: unused variable ‘totalcount’ [-Wunused-variable]
+  float totalcount=0;
+        ^
+src/caffe/solver.cpp:592:8: warning: unused variable ‘errorcount’ [-Wunused-variable]
+  float errorcount=0;
+        ^

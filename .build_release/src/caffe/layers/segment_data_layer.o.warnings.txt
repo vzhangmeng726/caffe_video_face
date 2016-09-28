@@ -1,0 +1,16 @@
+src/caffe/layers/segment_data_layer.cpp: In instantiation of ‘void caffe::SegmentDataLayer<Dtype>::GetLaneTop(std::string, boost::shared_ptr<caffe::Blob<Dtype> >, int, caffe::TopInfo) [with Dtype = float; std::string = std::basic_string<char>]’:
+src/caffe/layers/segment_data_layer.cpp:620:1:   required from here
+src/caffe/layers/segment_data_layer.cpp:199:30: warning: variable ‘src_channels’ set but not used [-Wunused-but-set-variable]
+   float src_height,src_width,src_channels,src_num;
+                              ^
+src/caffe/layers/segment_data_layer.cpp:199:43: warning: variable ‘src_num’ set but not used [-Wunused-but-set-variable]
+   float src_height,src_width,src_channels,src_num;
+                                           ^
+src/caffe/layers/segment_data_layer.cpp: In instantiation of ‘void caffe::SegmentDataLayer<Dtype>::GetLaneTop(std::string, boost::shared_ptr<caffe::Blob<Dtype> >, int, caffe::TopInfo) [with Dtype = double; std::string = std::basic_string<char>]’:
+src/caffe/layers/segment_data_layer.cpp:620:1:   required from here
+src/caffe/layers/segment_data_layer.cpp:199:30: warning: variable ‘src_channels’ set but not used [-Wunused-but-set-variable]
+   float src_height,src_width,src_channels,src_num;
+                              ^
+src/caffe/layers/segment_data_layer.cpp:199:43: warning: variable ‘src_num’ set but not used [-Wunused-but-set-variable]
+   float src_height,src_width,src_channels,src_num;
+                                           ^

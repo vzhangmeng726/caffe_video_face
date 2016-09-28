@@ -1,0 +1,8 @@
+src/caffe/layers/diagonalgaterecurrent_layer.cpp: In instantiation of ‘void caffe::DiagonalGateRecurrentLayer<Dtype>::Backward_cpu(const std::vector<caffe::Blob<Dtype>*>&, const std::vector<bool>&, const std::vector<caffe::Blob<Dtype>*>&) [with Dtype = float]’:
+src/caffe/layers/diagonalgaterecurrent_layer.cpp:441:2:   required from here
+src/caffe/layers/diagonalgaterecurrent_layer.cpp:336:17: warning: unused variable ‘H_t’ [-Wunused-variable]
+    const Dtype* H_t = H_data + t * H_count;
+                 ^
+src/caffe/layers/diagonalgaterecurrent_layer.cpp: In instantiation of ‘void caffe::DiagonalGateRecurrentLayer<Dtype>::Backward_cpu(const std::vector<caffe::Blob<Dtype>*>&, const std::vector<bool>&, const std::vector<caffe::Blob<Dtype>*>&) [with Dtype = double]’:
+src/caffe/layers/diagonalgaterecurrent_layer.cpp:441:2:   required from here
+src/caffe/layers/diagonalgaterecurrent_layer.cpp:336:17: warning: unused variable ‘H_t’ [-Wunused-variable]

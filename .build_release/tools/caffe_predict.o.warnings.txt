@@ -1,0 +1,176 @@
+tools/caffe_predict.cpp: In function ‘cv::Mat get_outputmap(const std::vector<std::vector<caffe::Blob<float>*>, std::allocator<std::vector<caffe::Blob<float>*> > >&, int, bool)’:
+tools/caffe_predict.cpp:172:7: warning: unused variable ‘count’ [-Wunused-variable]
+   int count = outblobs[0]->count(); 
+       ^
+tools/caffe_predict.cpp: In function ‘cv::Mat forwardNet(caffe::Net<float>&, std::string, cv::Mat, int, int, float*, float, bool, bool)’:
+tools/caffe_predict.cpp:239:32: warning: unused variable ‘bottom_need_backward’ [-Wunused-variable]
+   const vector<vector<bool> >& bottom_need_backward = caffe_net.bottom_need_backward();
+                                ^
+tools/caffe_predict.cpp: In function ‘cv::Mat forwardNet(caffe::Net<float>&, std::string, std::vector<cv::Mat>, int, int, float*, float, bool, bool)’:
+tools/caffe_predict.cpp:275:32: warning: unused variable ‘bottom_need_backward’ [-Wunused-variable]
+   const vector<vector<bool> >& bottom_need_backward = caffe_net.bottom_need_backward();
+                                ^
+tools/caffe_predict.cpp: In function ‘cv::Mat forwardNet_forvoc_multi_input(caffe::Net<float>&, std::string, cv::Mat, std::vector<float>, int, int, float*, float, bool, bool)’:
+tools/caffe_predict.cpp:333:32: warning: unused variable ‘bottom_need_backward’ [-Wunused-variable]
+   const vector<vector<bool> >& bottom_need_backward = caffe_net.bottom_need_backward();
+                                ^
+tools/caffe_predict.cpp: In function ‘std::vector<caffe::Blob<float>*> extractNetfeature(caffe::Net<float>&, std::string, cv::Mat, int, int, float*, float)’:
+tools/caffe_predict.cpp:423:7: warning: unused variable ‘input_height’ [-Wunused-variable]
+   int input_height = inputimg.rows;
+       ^
+tools/caffe_predict.cpp:424:7: warning: unused variable ‘input_width’ [-Wunused-variable]
+   int input_width = inputimg.cols;
+       ^
+tools/caffe_predict.cpp:441:34: warning: unused variable ‘bottom_need_backward’ [-Wunused-variable]
+     const vector<vector<bool> >& bottom_need_backward = caffe_net.bottom_need_backward();
+                                  ^
+tools/caffe_predict.cpp: In function ‘int test_saveimg()’:
+tools/caffe_predict.cpp:506:9: warning: unused variable ‘loss’ [-Wunused-variable]
+   float loss = 0;
+         ^
+tools/caffe_predict.cpp:508:13: warning: unused variable ‘start’ [-Wunused-variable]
+     clock_t start, finish;  
+             ^
+tools/caffe_predict.cpp:508:20: warning: unused variable ‘finish’ [-Wunused-variable]
+     clock_t start, finish;  
+                    ^
+tools/caffe_predict.cpp:509:12: warning: unused variable ‘t_start’ [-Wunused-variable]
+     time_t t_start, t_end;   
+            ^
+tools/caffe_predict.cpp:509:21: warning: unused variable ‘t_end’ [-Wunused-variable]
+     time_t t_start, t_end;   
+                     ^
+tools/caffe_predict.cpp: In function ‘int test_saveimg_new()’:
+tools/caffe_predict.cpp:613:9: warning: unused variable ‘loss’ [-Wunused-variable]
+   float loss = 0;
+         ^
+tools/caffe_predict.cpp:615:13: warning: unused variable ‘start’ [-Wunused-variable]
+     clock_t start, finish;  
+             ^
+tools/caffe_predict.cpp:615:20: warning: unused variable ‘finish’ [-Wunused-variable]
+     clock_t start, finish;  
+                    ^
+tools/caffe_predict.cpp:616:12: warning: unused variable ‘t_start’ [-Wunused-variable]
+     time_t t_start, t_end;   
+            ^
+tools/caffe_predict.cpp:616:21: warning: unused variable ‘t_end’ [-Wunused-variable]
+     time_t t_start, t_end;   
+                     ^
+tools/caffe_predict.cpp: In function ‘int testpair_saveimg()’:
+tools/caffe_predict.cpp:723:9: warning: unused variable ‘loss’ [-Wunused-variable]
+   float loss = 0;
+         ^
+tools/caffe_predict.cpp:725:13: warning: unused variable ‘start’ [-Wunused-variable]
+     clock_t start, finish;  
+             ^
+tools/caffe_predict.cpp:725:20: warning: unused variable ‘finish’ [-Wunused-variable]
+     clock_t start, finish;  
+                    ^
+tools/caffe_predict.cpp:726:12: warning: unused variable ‘t_start’ [-Wunused-variable]
+     time_t t_start, t_end;   
+            ^
+tools/caffe_predict.cpp:726:21: warning: unused variable ‘t_end’ [-Wunused-variable]
+     time_t t_start, t_end;   
+                     ^
+tools/caffe_predict.cpp: In function ‘int test_voc_multi_input()’:
+tools/caffe_predict.cpp:826:9: warning: unused variable ‘loss’ [-Wunused-variable]
+   float loss = 0;
+         ^
+tools/caffe_predict.cpp:828:13: warning: unused variable ‘start’ [-Wunused-variable]
+     clock_t start, finish;  
+             ^
+tools/caffe_predict.cpp:828:20: warning: unused variable ‘finish’ [-Wunused-variable]
+     clock_t start, finish;  
+                    ^
+tools/caffe_predict.cpp:829:12: warning: unused variable ‘t_start’ [-Wunused-variable]
+     time_t t_start, t_end;   
+            ^
+tools/caffe_predict.cpp:829:21: warning: unused variable ‘t_end’ [-Wunused-variable]
+     time_t t_start, t_end;   
+                     ^
+tools/caffe_predict.cpp: In function ‘int test_extractfeature()’:
+tools/caffe_predict.cpp:978:9: warning: unused variable ‘loss’ [-Wunused-variable]
+   float loss = 0;
+         ^
+tools/caffe_predict.cpp:980:13: warning: unused variable ‘start’ [-Wunused-variable]
+     clock_t start, finish;  
+             ^
+tools/caffe_predict.cpp:980:20: warning: unused variable ‘finish’ [-Wunused-variable]
+     clock_t start, finish;  
+                    ^
+tools/caffe_predict.cpp:981:12: warning: unused variable ‘t_start’ [-Wunused-variable]
+     time_t t_start, t_end;   
+            ^
+tools/caffe_predict.cpp:981:21: warning: unused variable ‘t_end’ [-Wunused-variable]
+     time_t t_start, t_end;   
+                     ^
+tools/caffe_predict.cpp: In function ‘int test_extractfeatureforfacerec()’:
+tools/caffe_predict.cpp:1120:9: warning: unused variable ‘loss’ [-Wunused-variable]
+   float loss = 0;
+         ^
+tools/caffe_predict.cpp:1122:13: warning: unused variable ‘start’ [-Wunused-variable]
+     clock_t start, finish;  
+             ^
+tools/caffe_predict.cpp:1122:20: warning: unused variable ‘finish’ [-Wunused-variable]
+     clock_t start, finish;  
+                    ^
+tools/caffe_predict.cpp:1123:12: warning: unused variable ‘t_start’ [-Wunused-variable]
+     time_t t_start, t_end;   
+            ^
+tools/caffe_predict.cpp:1123:21: warning: unused variable ‘t_end’ [-Wunused-variable]
+     time_t t_start, t_end;   
+                     ^
+tools/caffe_predict.cpp: In function ‘int test_extract_one_feature()’:
+tools/caffe_predict.cpp:1256:9: warning: unused variable ‘loss’ [-Wunused-variable]
+   float loss = 0;
+         ^
+tools/caffe_predict.cpp:1258:13: warning: unused variable ‘start’ [-Wunused-variable]
+     clock_t start, finish;  
+             ^
+tools/caffe_predict.cpp:1258:20: warning: unused variable ‘finish’ [-Wunused-variable]
+     clock_t start, finish;  
+                    ^
+tools/caffe_predict.cpp:1259:12: warning: unused variable ‘t_start’ [-Wunused-variable]
+     time_t t_start, t_end;   
+            ^
+tools/caffe_predict.cpp:1259:21: warning: unused variable ‘t_end’ [-Wunused-variable]
+     time_t t_start, t_end;   
+                     ^
+tools/caffe_predict.cpp: In function ‘int test_extractparam()’:
+tools/caffe_predict.cpp:1307:10: warning: unused variable ‘inputcolorimg’ [-Wunused-variable]
+     bool inputcolorimg=true;
+          ^
+tools/caffe_predict.cpp:1310:15: warning: unused variable ‘height’ [-Wunused-variable]
+     const int height =FLAGS_height;
+               ^
+tools/caffe_predict.cpp:1311:15: warning: unused variable ‘width’ [-Wunused-variable]
+     const int width = FLAGS_width;
+               ^
+tools/caffe_predict.cpp: In function ‘std::vector<cv::Rect_<int> > detect_face(cv::Mat, CvHaarClassifierCascade*)’:
+tools/caffe_predict.cpp:1441:21: warning: unused variable ‘center’ [-Wunused-variable]
+             CvPoint center;
+                     ^
+tools/caffe_predict.cpp:1442:17: warning: unused variable ‘radius’ [-Wunused-variable]
+             int radius;
+                 ^
+tools/caffe_predict.cpp: In function ‘void demolfw(caffe::Net<float>&, std::string, cv::Mat, cv::Rect, cv::Mat&, int, int, std::vector<cv::Scalar_<double> >, float*, float)’:
+tools/caffe_predict.cpp:1476:34: warning: unused variable ‘bottom_need_backward’ [-Wunused-variable]
+     const vector<vector<bool> >& bottom_need_backward = caffe_net.bottom_need_backward();
+                                  ^
+tools/caffe_predict.cpp: In function ‘int face_demo()’:
+tools/caffe_predict.cpp:1648:73: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘clock_t {aka long int}’ [-Wformat=]
+   printf("face detect time = %d\n",(finish - start)*1000/CLOCKS_PER_SEC );
+                                                                         ^
+tools/caffe_predict.cpp:1666:75: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘clock_t {aka long int}’ [-Wformat=]
+     printf("lfw forward time = %d\n",(finish - start)*1000/CLOCKS_PER_SEC );
+                                                                           ^
+tools/caffe_predict.cpp:1674:77: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘clock_t {aka long int}’ [-Wformat=]
+     printf("helen forward time = %d\n",(finish - start)*1000/CLOCKS_PER_SEC );
+                                                                             ^
+tools/caffe_predict.cpp: In function ‘int multiface_demo()’:
+tools/caffe_predict.cpp:1829:79: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘clock_t {aka long int}’ [-Wformat=]
+     printf("parsing forward time = %d\n",(finish - start)*1000/CLOCKS_PER_SEC );
+                                                                               ^
+tools/caffe_predict.cpp:1786:7: warning: unused variable ‘count’ [-Wunused-variable]
+   int count=0;
+       ^

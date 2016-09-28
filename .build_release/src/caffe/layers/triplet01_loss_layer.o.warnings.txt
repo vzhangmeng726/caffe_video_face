@@ -1,0 +1,16 @@
+src/caffe/layers/triplet01_loss_layer.cpp: In instantiation of ‘void caffe::Triplet01LossLayer<Dtype>::Forward_cpu(const std::vector<caffe::Blob<Dtype>*>&, const std::vector<caffe::Blob<Dtype>*>&) [with Dtype = float]’:
+src/caffe/layers/triplet01_loss_layer.cpp:192:1:   required from here
+src/caffe/layers/triplet01_loss_layer.cpp:111:66: error: ‘class caffe::LayerParameter’ has no member named ‘triplet01_loss_param’
+  Dtype margin = this->layer_param_.triplet01_loss_param().margin();  
+                                                                  ^
+src/caffe/layers/triplet01_loss_layer.cpp:139:2: error: ‘class caffe::LayerParameter’ has no member named ‘triplet01_loss_param’
+  if(this->layer_param_.triplet01_loss_param().print_time())
+  ^
+src/caffe/layers/triplet01_loss_layer.cpp: In instantiation of ‘void caffe::Triplet01LossLayer<Dtype>::Forward_cpu(const std::vector<caffe::Blob<Dtype>*>&, const std::vector<caffe::Blob<Dtype>*>&) [with Dtype = double]’:
+src/caffe/layers/triplet01_loss_layer.cpp:192:1:   required from here
+src/caffe/layers/triplet01_loss_layer.cpp:111:66: error: ‘class caffe::LayerParameter’ has no member named ‘triplet01_loss_param’
+  Dtype margin = this->layer_param_.triplet01_loss_param().margin();  
+                                                                  ^
+src/caffe/layers/triplet01_loss_layer.cpp:139:2: error: ‘class caffe::LayerParameter’ has no member named ‘triplet01_loss_param’
+  if(this->layer_param_.triplet01_loss_param().print_time())
+  ^

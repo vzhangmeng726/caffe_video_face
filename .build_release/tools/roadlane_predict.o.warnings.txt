@@ -1,0 +1,72 @@
+tools/roadlane_predict.cpp: In function ‘cv::Mat get_outputmap(const std::vector<std::vector<caffe::Blob<float>*>, std::allocator<std::vector<caffe::Blob<float>*> > >&, int, bool)’:
+tools/roadlane_predict.cpp:210:8: warning: unused variable ‘count’ [-Wunused-variable]
+  int   count  = outblobs[0]->count();
+        ^
+tools/roadlane_predict.cpp: In function ‘cv::Mat forwardNet(caffe::Net<float>&, std::string, cv::Mat, int, int, float*, float, bool, bool)’:
+tools/roadlane_predict.cpp:277:34: warning: unused variable ‘bottom_need_backward’ [-Wunused-variable]
+  const vector<vector<bool> > &   bottom_need_backward = caffe_net.bottom_need_backward();
+                                  ^
+tools/roadlane_predict.cpp: In function ‘cv::Mat forwardNet(caffe::Net<float>&, std::string, std::vector<cv::Mat>, int, int, float*, float, bool, bool)’:
+tools/roadlane_predict.cpp:312:34: warning: unused variable ‘bottom_need_backward’ [-Wunused-variable]
+  const vector<vector<bool> > &   bottom_need_backward = caffe_net.bottom_need_backward();
+                                  ^
+tools/roadlane_predict.cpp: In function ‘std::vector<caffe::Blob<float>*> extractNetfeature(caffe::Net<float>&, std::string, cv::Mat, int, int, float*, float)’:
+tools/roadlane_predict.cpp:366:6: warning: unused variable ‘input_height’ [-Wunused-variable]
+  int input_height = inputimg.rows;
+      ^
+tools/roadlane_predict.cpp:367:6: warning: unused variable ‘input_width’ [-Wunused-variable]
+  int input_width = inputimg.cols;
+      ^
+tools/roadlane_predict.cpp:388:34: warning: unused variable ‘bottom_need_backward’ [-Wunused-variable]
+  const vector<vector<bool> > &   bottom_need_backward = caffe_net.bottom_need_backward();
+                                  ^
+tools/roadlane_predict.cpp: In function ‘void getContour(IplImage*, IplImage*, double, std::vector<_IplImage*>&)’:
+tools/roadlane_predict.cpp:570:7: warning: unused variable ‘contour_num’ [-Wunused-variable]
+  int  contour_num  = cvFindContours( img_src, storage, &contour, sizeof(CvContour), CV_RETR_CCOMP, CV_CHAIN_APPROX_SIMPLE, cvPoint( 0, 0 ) );
+       ^
+tools/roadlane_predict.cpp:573:7: warning: unused variable ‘count’ [-Wunused-variable]
+  int  count   = 0;
+       ^
+tools/roadlane_predict.cpp: In function ‘std::vector<float> getMaxScoreLines(std::vector<_IplImage*>, uint*, float*, float*, float*, float*, float*, int, int)’:
+tools/roadlane_predict.cpp:648:13: warning: unused variable ‘tmp’ [-Wunused-variable]
+        uint tmp   = (uint) (pImgContourData[cur_index] / 255);
+             ^
+tools/roadlane_predict.cpp: In function ‘void translanes(std::vector<std::vector<float> >, std::vector<std::vector<float> >&, cv::Mat, int, int)’:
+tools/roadlane_predict.cpp:1178:22: warning: name lookup of ‘i’ changed [enabled by default]
+   lane.push_back(src[i][0]);
+                      ^
+tools/roadlane_predict.cpp:1136:10: warning:   matches this ‘i’ under ISO standard rules [enabled by default]
+  for(int i=0;i<src.size();i++)
+          ^
+tools/roadlane_predict.cpp:1164:11: warning:   matches this ‘i’ under old rules [enabled by default]
+   for(int i=0;i<points_trans.size();i++)
+           ^
+tools/roadlane_predict.cpp: In function ‘int test_roadlane()’:
+tools/roadlane_predict.cpp:1376:18: warning: name lookup of ‘i’ changed [enabled by default]
+   LOG( INFO ) << i << " save data " << savename << ", caffe time=" << timecost << " ms, nms time=" << timecost_nms
+                  ^
+tools/roadlane_predict.cpp:1281:12: warning:   matches this ‘i’ under ISO standard rules [enabled by default]
+  for ( int i = 0; i < length; ++i )
+            ^
+tools/roadlane_predict.cpp:1354:11: warning:   matches this ‘i’ under old rules [enabled by default]
+   for(int i=0;i<ipmlanes.size();i++)
+           ^
+tools/roadlane_predict.cpp:1244:10: warning: unused variable ‘loss’ [-Wunused-variable]
+  float   loss = 0;
+          ^
+tools/roadlane_predict.cpp:1246:10: warning: unused variable ‘start’ [-Wunused-variable]
+  clock_t start, finish;
+          ^
+tools/roadlane_predict.cpp:1246:17: warning: unused variable ‘finish’ [-Wunused-variable]
+  clock_t start, finish;
+                 ^
+tools/roadlane_predict.cpp:1247:9: warning: unused variable ‘t_start’ [-Wunused-variable]
+  time_t t_start, t_end;
+         ^
+tools/roadlane_predict.cpp:1247:18: warning: unused variable ‘t_end’ [-Wunused-variable]
+  time_t t_start, t_end;
+                  ^
+tools/roadlane_predict.cpp: In function ‘std::vector<std::vector<float> > getPredictedLanes_new(float*, int, int)’:
+tools/roadlane_predict.cpp:1057:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
