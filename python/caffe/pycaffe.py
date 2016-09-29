@@ -3,17 +3,6 @@ Wrap the internal caffe C++ module (_caffe.so) with a clean, Pythonic
 interface.
 """
 
-#import sys
-#sys.path.insert(0,'/home/wangzd/anaconda2/lib/python2.7/site-packages')
-#sys.path.insert(0,'/home/wangzd/anaconda2/lib/python27.zip')
-#sys.path.insert(0,'/home/wangzd/anaconda2/lib/python2.7')
-#sys.path.insert(0,'/home/wangzd/anaconda2/lib/python2.7/plat-linux2')
-#sys.path.insert(0,'/home/wangzd/anaconda2/lib/python2.7/lib-tk')
-#sys.path.insert(0,'/home/wangzd/anaconda2/lib/python2.7/lib-old')
-#sys.path.insert(0,'/home/wangzd/anaconda2/lib/python2.7/lib-dynload')
-#sys.path.insert(0,'/home/wangzd/anaconda2/lib/python2.7/site-packages/Sphinx-1.4.1-py2.7.egg')
-#sys.path.insert(0,'/home/wangzd/anaconda2/lib/python2.7/site-packages/setuptools-23.0.0-py2.7.egg')
-
 
 
 from collections import OrderedDict

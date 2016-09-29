@@ -26,8 +26,8 @@ class Vface_datalayer(caffe.Layer):
         self.image_fea_pickle = "/home/wangzd/caffe/JLmodels/im_face.fea"
         
         # two tops: data and same flag
-        if len(top) != 4:
-            raise Exception("Need to define two tops: video,image_feature and same flag")
+        #if len(top) != 4:
+        #    raise Exception("Need to define two tops: video,image_feature and same flag")
         # data layers have no bottoms
         if len(bottom) != 0:
             raise Exception("Do not define a bottom.")
@@ -42,8 +42,8 @@ class Vface_datalayer(caffe.Layer):
     def reshape(self,bottom,top):
         top[0].reshape(self.batch_size,3,self.image_size,self.image_size)
         top[1].reshape(self.batch_size,3,self.input_size,self.input_size)
-        top[2].reshape(self.batch_size,self.im_fea_dim)
-        top[3].reshape(self.batch_size)
+        #top[2].reshape(self.batch_size,self.im_fea_dim)
+        #top[3].reshape(self.batch_size)
         
     def forward(self,bottom,top):
         list_id_im =[]
@@ -61,7 +61,7 @@ class Vface_datalayer(caffe.Layer):
             list_id_im.append(k[idx])
             list_id_vd.append(k[idx])
             # read the image feature
-            img_fea[i] = self.dic_im_face[k[idx]][0,0,0]
+            img_fea[i] = self.dic_im_face[k[idx]][:,0,0]
             # randomly choose another image from the same identity
             id_dir = self.dataset_root+'/'+ k[idx]
             im_list = os.listdir(id_dir)
@@ -88,7 +88,7 @@ class Vface_datalayer(caffe.Layer):
             list_id_im.append(k[idx])
             list_id_vd.append(k[idx_diff])
             # read the image feature
-            img_fea[i] = self.dic_im_face[k[idx]][0,0,0]
+            img_fea[i] = self.dic_im_face[k[idx]][:,0,0]
             # randomly choose another image from the another identity
             id_dir = self.dataset_root+'/'+ k[idx_diff]
             im_list = os.listdir(id_dir)
@@ -102,12 +102,25 @@ class Vface_datalayer(caffe.Layer):
             
             
         # shuffle
+        shuffle_list = []
+        for i in range(self.batch_size):
+            shuffle_list.append([video_img_original[i,:,:,:],\
+                                video_img[i,:,:,:],\
+                                img_fea[i,:],\
+                                same[i]])
+        np.random.shuffle(shuffle_list)
+        
+        for i in range(self.batch_size):
+            video_img_original[i,:,:,:] = shuffle_list[i][0]
+            video_img[i,:,:,:] = shuffle_list[i][1]
+            img_fea[i,:] = shuffle_list[i][2]
+            same[i] = shuffle_list[i][3]
         
         # put data into the top blob
         top[0].data[...] = video_img_original
         top[1].data[...] = video_img
-        top[2].data[...] = img_fea
-        top[3].data[...] = same
+        #top[2].data[...] = img_fea
+        #top[3].data[...] = same
         
     def backward(self,top,propagate_down,bottom):
         pass
@@ -117,7 +130,7 @@ class Vface_datalayer(caffe.Layer):
         if resize == 1:
             img = img.resize((self.input_size,self.input_size))
         in_ = np.array(img,dtype=np.float32)
-        in_ = in_[:,:,::-1]
+        #in_ = in_[:,:,::-1]
         in_ -= self.mean
         in_ = in_.transpose((2,0,1))
         return in_
